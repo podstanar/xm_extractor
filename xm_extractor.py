@@ -1,6 +1,5 @@
 import os, re, argparse
 
-# Funkcije
 def make_regex_from_hex_sign(hex_sign):
     regex_hex_sign = re.compile(hex_sign.decode('hex'))
     return regex_hex_sign
@@ -24,7 +23,7 @@ def xm_write(xm_data):
     f.write(xm_data)
     f.close()
 
-# START
+
 xm_signature = "457874656E646564204D6F64756C65"
 
 # arg parser
