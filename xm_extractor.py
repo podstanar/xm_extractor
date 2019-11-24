@@ -15,7 +15,7 @@ def xm_read(regex_hex_sign, xm_size):
         f.seek(offset)
         xm_data = f.read(xm_size)
         print "\nXM data offset: " + hex(offset)
-	f.close()
+    f.close()
     return xm_data
 
 def xm_write(xm_data):
